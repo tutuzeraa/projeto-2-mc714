@@ -31,6 +31,9 @@
 *.out
 *.app
 
+# Ignore vscode settings
+.vscode/
+
 # CMake generated files
 CMakeFiles/
 CMakeCache.txt
