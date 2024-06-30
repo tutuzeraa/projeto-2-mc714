@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  node1:
+    build: .
+    container_name: node1
+    environment:
+      - NODE_ID=1
+      - NEXT_NODE_IP=node2
+    networks:
+      ring_net:
+        ipv4_address: 172.20.0.2
+    command: ["token_ring.py"]
+
+  node2:
+    build: .
+    container_name: node2
+    environment:
+      - NODE_ID=2
+      - NEXT_NODE_IP=node3
+    networks:
+      ring_net:
+        ipv4_address: 172.20.0.3
+    command: ["token_ring.py"]
+
+  node1:
+    build: .
+    container_name: node3
+    environment:
+      - NODE_ID=3
+      - NEXT_NODE_IP=node1
+    networks:
+      ring_net:
+        ipv4_address: 172.20.0.4
+    command: ["token_ring.py"]
+
+networks:
+  ring_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
