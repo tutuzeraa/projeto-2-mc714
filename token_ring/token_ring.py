@@ -1,11 +1,12 @@
 import os
+import sys
 import time
 import zmq
 import random
 import threading
 
 
-def main():
+def main(node_ip):
     node_id = int(os.environ['NODE_ID'])
     next_node_ip = os.environ['NEXT_NODE_IP']
     
@@ -14,11 +15,11 @@ def main():
     # socket.bind(f"tcp://*:5555")
     
     receiver = context.socket(zmq.REP)
-    receiver.bind(f"tcp://*:5555")
+    receiver.bind(f"tcp://{node_ip}:5555")
 
-    def receive_token(socket, node_id, next_node_ip):
+    def receive_token(node_id, next_node_ip):
         while True:
-            message = socket.recv_json()
+            message = receiver.recv_json()
             if message.get("token") is not None:
                 print(f"Node {node_id} received the token")
                 
@@ -35,7 +36,7 @@ def main():
     
 
     # Start the receiver thread
-    receiver_thread = threading.Thread(target=receive_token, args=(receiver, node_id, next_node_ip))
+    receiver_thread = threading.Thread(target=receive_token, args=(node_id, next_node_ip))
     receiver_thread.start()
    
 
@@ -51,4 +52,5 @@ def main():
     receiver_thread.join()
 
 if __name__ == "__main__":
-    main()
+    node_ip = sys.argv[1]
+    main(node_ip)
