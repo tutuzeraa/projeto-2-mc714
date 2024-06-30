@@ -59,7 +59,6 @@ def main(node_id, my_id, start_election, peers, peer_ids):
                     # with lock:
                     #     has_received_leader = True
                     receiver.send_json({'ack': True})
-                    return
                 elif action == "ok":
                     with lock:
                         received_ok += 1
@@ -80,7 +79,7 @@ def main(node_id, my_id, start_election, peers, peer_ids):
                 sender = context.socket(zmq.REQ)
                 sender.connect(peer)
                 sender.send_json({'id': my_id, 'action': 'election'})
-                sender.setsockopt(zmq.RCVTIMEO, 2000)  # 2 seconds timeout
+                sender.setsockopt(zmq.RCVTIMEO, 500)  # 2 seconds timeout
                 try:
                     sender.recv_json()  # Waiting for ack
                 except zmq.error.Again:
@@ -147,7 +146,7 @@ def main(node_id, my_id, start_election, peers, peer_ids):
 
     while current_leader == None:
         pass
-    
+
 
     time.sleep(15) 
     logging.info(f"The current leader is {id_names[current_leader]}")

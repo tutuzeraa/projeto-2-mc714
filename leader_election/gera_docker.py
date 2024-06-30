@@ -48,8 +48,8 @@ def generate_docker_compose(num_nodes, election_nodes):
 
     return compose
 
-num_nodes = 20 # Set the number of nodes you want to generate
-election_nodes = [12]  # Nodes 1, 3, and 4 will start elections
+num_nodes = 5 # Set the number of nodes you want to generate
+election_nodes = [1, 9, 12, 50]  # Nodes 1, 3, and 4 will start elections
 
 docker_compose_dict = generate_docker_compose(num_nodes, election_nodes)
 

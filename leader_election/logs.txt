@@ -1,118 +1,57 @@
-node17  | 2024-06-28 08:39:42,953 - Node 17 is starting up
-node12  | 2024-06-28 08:39:40,974 - Node 12 is starting up
-node1   | 2024-06-28 08:39:42,580 - Node 1 is starting up
-node20  | 2024-06-28 08:39:39,948 - Node 20 is starting up
-node11  | 2024-06-28 08:39:42,472 - Node 11 is starting up
-node5   | 2024-06-28 08:39:40,260 - Node 5 is starting up
-node14  | 2024-06-28 08:39:42,891 - Node 14 is starting up
-node19  | 2024-06-28 08:39:42,578 - Node 19 is starting up
-node9   | 2024-06-28 08:39:42,956 - Node 9 is starting up
-node12  | 2024-06-28 08:39:50,985 - Node 12 is starting an election voluntarily
-node12  | 2024-06-28 08:39:50,985 - Node 12 is initiating an election
-node12  | 2024-06-28 08:39:50,985 - Node 12 is sending election to Node 13
-node12  | 2024-06-28 08:39:52,988 - Node 13 did not respond in time, moving on
-node12  | 2024-06-28 08:39:52,988 - Node 12 is sending election to Node 14
-node14  | 2024-06-28 08:39:52,994 - Node 14 received election from Node 12
-node14  | 2024-06-28 08:39:53,000 - Node 14 received election message and notifying main thread to start election
-node14  | 2024-06-28 08:39:53,005 - Node 14 is initiating an election
-node14  | 2024-06-28 08:39:53,005 - Node 14 is sending election to Node 15
-node12  | 2024-06-28 08:39:53,005 - Node 12 is sending election to Node 15
-node12  | 2024-06-28 08:39:53,006 - Node 12 received ok from Node 14
-node14  | 2024-06-28 08:39:55,008 - Node 15 did not respond in time, moving on
-node14  | 2024-06-28 08:39:55,008 - Node 14 is sending election to Node 16
-node12  | 2024-06-28 08:39:55,008 - Node 15 did not respond in time, moving on
-node12  | 2024-06-28 08:39:55,008 - Node 12 is sending election to Node 16
-node14  | 2024-06-28 08:39:57,009 - Node 16 did not respond in time, moving on
-node14  | 2024-06-28 08:39:57,009 - Node 14 is sending election to Node 17
-node12  | 2024-06-28 08:39:57,010 - Node 16 did not respond in time, moving on
-node12  | 2024-06-28 08:39:57,011 - Node 12 is sending election to Node 17
-node17  | 2024-06-28 08:39:57,016 - Node 17 received election from Node 14
-node17  | 2024-06-28 08:39:57,016 - Node 17 received election message and notifying main thread to start election
-node14  | 2024-06-28 08:39:57,016 - Node 14 is sending election to Node 18
-node17  | 2024-06-28 08:39:57,016 - Node 17 is initiating an election
-node17  | 2024-06-28 08:39:57,016 - Node 17 is sending election to Node 18
-node14  | 2024-06-28 08:39:57,017 - Node 14 received ok from Node 17
-node17  | 2024-06-28 08:39:57,017 - Node 17 received election from Node 12
-node17  | 2024-06-28 08:39:57,017 - Node 17 received election message and notifying main thread to start election
-node12  | 2024-06-28 08:39:57,018 - Node 12 is sending election to Node 18
-node12  | 2024-06-28 08:39:57,018 - Node 12 received ok from Node 17
-node17  | 2024-06-28 08:39:59,017 - Node 18 did not respond in time, moving on
-node17  | 2024-06-28 08:39:59,018 - Node 17 is sending election to Node 19
-node14  | 2024-06-28 08:39:59,018 - Node 18 did not respond in time, moving on
-node14  | 2024-06-28 08:39:59,018 - Node 14 is sending election to Node 19
-node12  | 2024-06-28 08:39:59,018 - Node 18 did not respond in time, moving on
-node12  | 2024-06-28 08:39:59,019 - Node 12 is sending election to Node 19
-node19  | 2024-06-28 08:39:59,024 - Node 19 received election from Node 17
-node19  | 2024-06-28 08:39:59,029 - Node 19 received election message and notifying main thread to start election
-node19  | 2024-06-28 08:39:59,030 - Node 19 is initiating an election
-node17  | 2024-06-28 08:39:59,030 - Node 17 is sending election to Node 20
-node19  | 2024-06-28 08:39:59,030 - Node 19 is sending election to Node 20
-node17  | 2024-06-28 08:39:59,030 - Node 17 received ok from Node 19
-node19  | 2024-06-28 08:39:59,031 - Node 19 received election from Node 12
-node19  | 2024-06-28 08:39:59,031 - Node 19 received election message and notifying main thread to start election
-node12  | 2024-06-28 08:39:59,031 - Node 12 is sending election to Node 20
-node12  | 2024-06-28 08:39:59,032 - Node 12 received ok from Node 19
-node19  | 2024-06-28 08:39:59,032 - Node 19 received election from Node 14
-node19  | 2024-06-28 08:39:59,032 - Node 19 received election message and notifying main thread to start election
-node14  | 2024-06-28 08:39:59,032 - Node 14 is sending election to Node 20
-node14  | 2024-06-28 08:39:59,032 - Node 14 received ok from Node 19
-node20  | 2024-06-28 08:39:59,036 - Node 20 received election from Node 19
-node20  | 2024-06-28 08:39:59,036 - Node 20 received election message and notifying main thread to start election
-node20  | 2024-06-28 08:39:59,036 - Node 20 is initiating an election
-node19  | 2024-06-28 08:39:59,037 - Node 19 received ok from Node 20
-node20  | 2024-06-28 08:39:59,037 - Node 20 received election from Node 14
-node20  | 2024-06-28 08:39:59,037 - Node 20 received election message and notifying main thread to start election
-node14  | 2024-06-28 08:39:59,038 - Node 14 received ok from Node 20
-node20  | 2024-06-28 08:39:59,038 - Node 20 received election from Node 17
-node20  | 2024-06-28 08:39:59,038 - Node 20 received election message and notifying main thread to start election
-node17  | 2024-06-28 08:39:59,039 - Node 17 received ok from Node 20
-node20  | 2024-06-28 08:39:59,039 - Node 20 received election from Node 12
-node20  | 2024-06-28 08:39:59,039 - Node 20 received election message and notifying main thread to start election
-node12  | 2024-06-28 08:39:59,040 - Node 12 received ok from Node 20
-node17  | 2024-06-28 08:40:04,041 - Current leader is None, has_started_election is True
-node19  | 2024-06-28 08:40:04,041 - Current leader is None, has_started_election is True
-node20  | 2024-06-28 08:40:04,041 - Node 20 is announcing itself as the leader
-node14  | 2024-06-28 08:40:04,041 - Current leader is None, has_started_election is True
-node1   | 2024-06-28 08:40:04,048 - Node 1 received leader from Node 20
-node1   | 2024-06-28 08:40:04,053 - Node 1 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:04,554 - Node 2 did not respond in time, moving on
-node20  | 2024-06-28 08:40:05,055 - Node 3 did not respond in time, moving on
-node20  | 2024-06-28 08:40:05,556 - Node 4 did not respond in time, moving on
-node5   | 2024-06-28 08:40:05,563 - Node 5 received leader from Node 20
-node5   | 2024-06-28 08:40:05,563 - Node 5 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:06,064 - Node 6 did not respond in time, moving on
-node20  | 2024-06-28 08:40:06,565 - Node 7 did not respond in time, moving on
-node20  | 2024-06-28 08:40:07,066 - Node 8 did not respond in time, moving on
-node9   | 2024-06-28 08:40:07,073 - Node 9 received leader from Node 20
-node9   | 2024-06-28 08:40:07,078 - Node 9 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:07,579 - Node 10 did not respond in time, moving on
-node11  | 2024-06-28 08:40:07,586 - Node 11 received leader from Node 20
-node11  | 2024-06-28 08:40:07,586 - Node 11 acknowledges Node 20 as leader
-node12  | 2024-06-28 08:40:07,592 - Node 12 received leader from Node 20
-node12  | 2024-06-28 08:40:07,592 - Node 12 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:08,093 - Node 13 did not respond in time, moving on
-node14  | 2024-06-28 08:40:08,100 - Node 14 received leader from Node 20
-node14  | 2024-06-28 08:40:08,100 - Node 14 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:08,602 - Node 15 did not respond in time, moving on
-node20  | 2024-06-28 08:40:09,103 - Node 16 did not respond in time, moving on
-node17  | 2024-06-28 08:40:09,109 - Node 17 received leader from Node 20
-node17  | 2024-06-28 08:40:09,109 - Node 17 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:09,611 - Node 18 did not respond in time, moving on
-node19  | 2024-06-28 08:40:09,617 - Node 19 received leader from Node 20
-node19  | 2024-06-28 08:40:09,622 - Node 19 acknowledges Node 20 as leader
-node20  | 2024-06-28 08:40:09,623 - Current leader is tcp://172.28.1.20:5555, has_started_election is True
-node1   | 2024-06-28 08:40:19,068 - The current leader is Node 20
+node2  | 2024-06-28 09:28:47,347 - Node 2 is starting up
+node5  | 2024-06-28 09:28:47,660 - Node 5 is starting up
+node4  | 2024-06-28 09:28:47,692 - Node 4 is starting up
+node1  | 2024-06-28 09:28:47,693 - Node 1 is starting up
+[Knode3 exited with code 1
+node1  | 2024-06-28 09:28:57,702 - Node 1 is starting an election voluntarily
+node1  | 2024-06-28 09:28:57,702 - Node 1 is initiating an election
+node1  | 2024-06-28 09:28:57,702 - Node 1 is sending election to Node 2
+node2  | 2024-06-28 09:28:57,708 - Node 2 received election from Node 1
+node2  | 2024-06-28 09:28:57,714 - Node 2 received election message and notifying main thread to start election
+node2  | 2024-06-28 09:28:57,714 - Node 2 is initiating an election
+node2  | 2024-06-28 09:28:57,714 - Node 2 is sending election to Node 3
+node1  | 2024-06-28 09:28:57,714 - Node 1 is sending election to Node 3
+node1  | 2024-06-28 09:28:57,715 - Node 1 received ok from Node 2
+node2  | 2024-06-28 09:28:58,215 - Node 3 did not respond in time, moving on
+node2  | 2024-06-28 09:28:58,215 - Node 2 is sending election to Node 4
+node1  | 2024-06-28 09:28:58,215 - Node 3 did not respond in time, moving on
+node1  | 2024-06-28 09:28:58,215 - Node 1 is sending election to Node 4
+node4  | 2024-06-28 09:28:58,221 - Node 4 received election from Node 1
+node4  | 2024-06-28 09:28:58,227 - Node 4 received election message and notifying main thread to start election
+node4  | 2024-06-28 09:28:58,227 - Node 4 is initiating an election
+node4  | 2024-06-28 09:28:58,227 - Node 4 is sending election to Node 5
+node1  | 2024-06-28 09:28:58,227 - Node 1 is sending election to Node 5
+node1  | 2024-06-28 09:28:58,228 - Node 1 received ok from Node 4
+node4  | 2024-06-28 09:28:58,228 - Node 4 received election from Node 2
+node4  | 2024-06-28 09:28:58,228 - Node 4 received election message and notifying main thread to start election
+node2  | 2024-06-28 09:28:58,228 - Node 2 is sending election to Node 5
+node2  | 2024-06-28 09:28:58,229 - Node 2 received ok from Node 4
+node5  | 2024-06-28 09:28:58,233 - Node 5 received election from Node 4
+node5  | 2024-06-28 09:28:58,233 - Node 5 received election message and notifying main thread to start election
+node5  | 2024-06-28 09:28:58,233 - Node 5 is initiating an election
+node4  | 2024-06-28 09:28:58,234 - Node 4 received ok from Node 5
+node5  | 2024-06-28 09:28:58,234 - Node 5 received election from Node 2
+node5  | 2024-06-28 09:28:58,234 - Node 5 received election message and notifying main thread to start election
+node2  | 2024-06-28 09:28:58,235 - Node 2 received ok from Node 5
+node5  | 2024-06-28 09:28:58,235 - Node 5 received election from Node 1
+node5  | 2024-06-28 09:28:58,235 - Node 5 received election message and notifying main thread to start election
+node1  | 2024-06-28 09:28:58,236 - Node 1 received ok from Node 5
+node5  | 2024-06-28 09:29:03,237 - Node 5 is announcing itself as the leader
+node2  | 2024-06-28 09:29:03,237 - Current leader is None, has_started_election is True
+node4  | 2024-06-28 09:29:03,237 - Current leader is None, has_started_election is True
+node1  | 2024-06-28 09:29:03,238 - Node 1 received leader from Node 5
+node1  | 2024-06-28 09:29:03,243 - Node 1 acknowledges Node 5 as leader
+node2  | 2024-06-28 09:29:03,250 - Node 2 received leader from Node 5
+node2  | 2024-06-28 09:29:03,250 - Node 2 acknowledges Node 5 as leader
+node5  | 2024-06-28 09:29:03,751 - Node 3 did not respond in time, moving on
+node4  | 2024-06-28 09:29:03,758 - Node 4 received leader from Node 5
+node4  | 2024-06-28 09:29:03,758 - Node 4 acknowledges Node 5 as leader
+node5  | 2024-06-28 09:29:03,758 - Current leader is tcp://172.28.1.5:5555, has_started_election is True
+node1  | 2024-06-28 09:29:18,257 - The current leader is Node 5
+node2  | 2024-06-28 09:29:18,261 - The current leader is Node 5
+[Knode2 exited with code 0
 [Knode1 exited with code 0
-node5   | 2024-06-28 08:40:20,577 - The current leader is Node 20
+node4  | 2024-06-28 09:29:18,769 - The current leader is Node 5
+node5  | 2024-06-28 09:29:18,773 - The current leader is Node 5
+[Knode4 exited with code 0
 [Knode5 exited with code 0
-node9   | 2024-06-28 08:40:22,094 - The current leader is Node 20
-[Knode9 exited with code 0
-node11  | 2024-06-28 08:40:22,601 - The current leader is Node 20
-node12  | 2024-06-28 08:40:22,605 - The current leader is Node 20
-[Knode11 exited with code 0
-node14  | 2024-06-28 08:40:23,116 - The current leader is Node 20
-node17  | 2024-06-28 08:40:24,115 - The current leader is Node 20
-node19  | 2024-06-28 08:40:24,637 - The current leader is Node 20
-node20  | 2024-06-28 08:40:24,638 - The current leader is Node 20
-[Knode20 exited with code 0
-[Knode19 exited with code 0
