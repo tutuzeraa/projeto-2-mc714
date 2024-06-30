@@ -11,7 +11,7 @@ def receive_token(socket, node_id, next_node_ip):
             print(f"Node {node_id} received the token")
             
             # Simulate critical section usage
-            time.sleep(random.uniform(1, 3))
+            time.sleep(random.uniform(3, 10))
             print(f"Node {node_id} releasing the token")
             
             # Send token to the next node
@@ -21,18 +21,25 @@ def receive_token(socket, node_id, next_node_ip):
             next_socket.send_json({"token": True})
             next_socket.close()
 
+
 def main():
+    print("HERE 1")
     node_id = int(os.environ['NODE_ID'])
     next_node_ip = os.environ['NEXT_NODE_IP']
     
+    print("HERE 2")
     context = zmq.Context()
     socket = context.socket(zmq.REP)
     socket.bind(f"tcp://*:5555")
     
+
+    print("HERE 3")
     # Start the receiver thread
     receiver_thread = threading.Thread(target=receive_token, args=(socket, node_id, next_node_ip))
     receiver_thread.start()
-    
+   
+
+    print("HERE 4")
     # Node 1 initializes the token
     if node_id == 1:
         time.sleep(5)  # Wait for all nodes to be up
@@ -42,6 +49,7 @@ def main():
         next_socket.send_json({"token": True})
         next_socket.close()
     
+    print("HERE 5")
     receiver_thread.join()
 
 if __name__ == "__main__":
