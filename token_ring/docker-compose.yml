@@ -28,11 +28,35 @@ services:
     depends_on: ["node2"]
     environment:
       - NODE_ID=3
-      - NEXT_NODE_IP=node1
+      - NEXT_NODE_IP=node4
     networks:
       ring_net:
         ipv4_address: 172.20.0.4
     command: ["token_ring.py", "172.20.0.4"]
+
+  node4:
+    build: .
+    container_name: node4
+    depends_on: ["node3"]
+    environment:
+      - NODE_ID=4
+      - NEXT_NODE_IP=node5
+    networks:
+      ring_net:
+        ipv4_address: 172.20.0.5
+    command: ["token_ring.py", "172.20.0.5"]
+
+  node5:
+    build: .
+    container_name: node5
+    depends_on: ["node4"]
+    environment:
+      - NODE_ID=5
+      - NEXT_NODE_IP=node1
+    networks:
+      ring_net:
+        ipv4_address: 172.20.0.6
+    command: ["token_ring.py", "172.20.0.6"]
 
 networks:
   ring_net:
