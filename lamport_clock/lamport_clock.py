@@ -3,6 +3,7 @@ import sys
 import threading
 import time
 import logging
+import random
 
 def main(my_id, peers):
     # Create id_names dictionary automatically based on peers
@@ -10,7 +11,10 @@ def main(my_id, peers):
     id_names[my_id] = f'Node {my_id.split(":")[1].split(".")[-1]}'
 
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
-    logging.info(f"{id_names[my_id]} is starting up")
+
+    logical_clock = random.randint(1, 1000)
+
+    logging.info(f"{id_names[my_id]} is starting up with clock {logical_clock}")
 
     context = zmq.Context()
 
@@ -21,7 +25,6 @@ def main(my_id, peers):
     # Socket to send messages to peers
     sender = context.socket(zmq.REQ)
 
-    logical_clock = 0
 
     def receive_messages():
         nonlocal logical_clock
@@ -57,7 +60,7 @@ def main(my_id, peers):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python lamport_clock.py <my_id> <peer1> <peer2> ...")
+        print("Usage: python3 lamport_clock.py <my_id> <peer1> <peer2> ...")
         sys.exit(1)
 
     my_id = sys.argv[1]

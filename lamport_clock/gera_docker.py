@@ -42,7 +42,7 @@ def generate_lamport_docker_compose(num_nodes):
 
     return compose
 
-num_nodes = 3  # Set the number of nodes you want to generate
+num_nodes = 5  # Set the number of nodes you want to generate
 
 docker_compose_dict = generate_lamport_docker_compose(num_nodes)
 
