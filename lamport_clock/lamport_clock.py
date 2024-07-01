@@ -12,7 +12,7 @@ def main(my_id, peers):
 
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
-    logical_clock = random.randint(1, 1000)
+    logical_clock = random.randint(1, 100) # Random initial clock value
 
     logging.info(f"{id_names[my_id]} is starting up with clock {logical_clock}")
 
