@@ -1,0 +1,57 @@
+node2  | 2024-06-28 09:28:47,347 - Node 2 is starting up
+node5  | 2024-06-28 09:28:47,660 - Node 5 is starting up
+node4  | 2024-06-28 09:28:47,692 - Node 4 is starting up
+node1  | 2024-06-28 09:28:47,693 - Node 1 is starting up
+[Knode3 exited with code 1
+node1  | 2024-06-28 09:28:57,702 - Node 1 is starting an election voluntarily
+node1  | 2024-06-28 09:28:57,702 - Node 1 is initiating an election
+node1  | 2024-06-28 09:28:57,702 - Node 1 is sending election to Node 2
+node2  | 2024-06-28 09:28:57,708 - Node 2 received election from Node 1
+node2  | 2024-06-28 09:28:57,714 - Node 2 received election message and notifying main thread to start election
+node2  | 2024-06-28 09:28:57,714 - Node 2 is initiating an election
+node2  | 2024-06-28 09:28:57,714 - Node 2 is sending election to Node 3
+node1  | 2024-06-28 09:28:57,714 - Node 1 is sending election to Node 3
+node1  | 2024-06-28 09:28:57,715 - Node 1 received ok from Node 2
+node2  | 2024-06-28 09:28:58,215 - Node 3 did not respond in time, moving on
+node2  | 2024-06-28 09:28:58,215 - Node 2 is sending election to Node 4
+node1  | 2024-06-28 09:28:58,215 - Node 3 did not respond in time, moving on
+node1  | 2024-06-28 09:28:58,215 - Node 1 is sending election to Node 4
+node4  | 2024-06-28 09:28:58,221 - Node 4 received election from Node 1
+node4  | 2024-06-28 09:28:58,227 - Node 4 received election message and notifying main thread to start election
+node4  | 2024-06-28 09:28:58,227 - Node 4 is initiating an election
+node4  | 2024-06-28 09:28:58,227 - Node 4 is sending election to Node 5
+node1  | 2024-06-28 09:28:58,227 - Node 1 is sending election to Node 5
+node1  | 2024-06-28 09:28:58,228 - Node 1 received ok from Node 4
+node4  | 2024-06-28 09:28:58,228 - Node 4 received election from Node 2
+node4  | 2024-06-28 09:28:58,228 - Node 4 received election message and notifying main thread to start election
+node2  | 2024-06-28 09:28:58,228 - Node 2 is sending election to Node 5
+node2  | 2024-06-28 09:28:58,229 - Node 2 received ok from Node 4
+node5  | 2024-06-28 09:28:58,233 - Node 5 received election from Node 4
+node5  | 2024-06-28 09:28:58,233 - Node 5 received election message and notifying main thread to start election
+node5  | 2024-06-28 09:28:58,233 - Node 5 is initiating an election
+node4  | 2024-06-28 09:28:58,234 - Node 4 received ok from Node 5
+node5  | 2024-06-28 09:28:58,234 - Node 5 received election from Node 2
+node5  | 2024-06-28 09:28:58,234 - Node 5 received election message and notifying main thread to start election
+node2  | 2024-06-28 09:28:58,235 - Node 2 received ok from Node 5
+node5  | 2024-06-28 09:28:58,235 - Node 5 received election from Node 1
+node5  | 2024-06-28 09:28:58,235 - Node 5 received election message and notifying main thread to start election
+node1  | 2024-06-28 09:28:58,236 - Node 1 received ok from Node 5
+node5  | 2024-06-28 09:29:03,237 - Node 5 is announcing itself as the leader
+node2  | 2024-06-28 09:29:03,237 - Current leader is None, has_started_election is True
+node4  | 2024-06-28 09:29:03,237 - Current leader is None, has_started_election is True
+node1  | 2024-06-28 09:29:03,238 - Node 1 received leader from Node 5
+node1  | 2024-06-28 09:29:03,243 - Node 1 acknowledges Node 5 as leader
+node2  | 2024-06-28 09:29:03,250 - Node 2 received leader from Node 5
+node2  | 2024-06-28 09:29:03,250 - Node 2 acknowledges Node 5 as leader
+node5  | 2024-06-28 09:29:03,751 - Node 3 did not respond in time, moving on
+node4  | 2024-06-28 09:29:03,758 - Node 4 received leader from Node 5
+node4  | 2024-06-28 09:29:03,758 - Node 4 acknowledges Node 5 as leader
+node5  | 2024-06-28 09:29:03,758 - Current leader is tcp://172.28.1.5:5555, has_started_election is True
+node1  | 2024-06-28 09:29:18,257 - The current leader is Node 5
+node2  | 2024-06-28 09:29:18,261 - The current leader is Node 5
+[Knode2 exited with code 0
+[Knode1 exited with code 0
+node4  | 2024-06-28 09:29:18,769 - The current leader is Node 5
+node5  | 2024-06-28 09:29:18,773 - The current leader is Node 5
+[Knode4 exited with code 0
+[Knode5 exited with code 0
